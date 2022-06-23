@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend">
+        <classes>
+            <class name="api.Account.GetAccountDetailsTest">
+                <methods>
+                    <include name="GetAccountDetails"/>
+                </methods>
+            </class>
+            <class name="api.Resources.CreateFileResourceTest">
+                <methods>
+                    <include name="successCreateTextResourcesTest"/>
+                </methods>
+            </class>
+            <class name="api.Resources.CreateTextResourceTest">
+                <methods>
+                    <include name="successCreateTextResourcesTest"/>
+                </methods>
+            </class>
+            <class name="api.Resources.GetResourceTest">
+                <methods>
+                    <include name="getResource"/>
+                </methods>
+            </class>
+            <class name="api.Resources.DownloadResourceTest">
+                <methods>
+                    <include name="downloadResource"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
