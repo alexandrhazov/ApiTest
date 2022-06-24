@@ -3,29 +3,54 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend">
         <classes>
-            <class name="api.Account.GetAccountDetailsTest">
+            <class name="api.Account.GetAccountDetails">
                 <methods>
-                    <include name="GetAccountDetails"/>
+                    <include name="getAccountDetailsTest"/>
                 </methods>
             </class>
-            <class name="api.Resources.CreateFileResourceTest">
-                <methods>
-                    <include name="successCreateTextResourcesTest"/>
-                </methods>
-            </class>
-            <class name="api.Resources.CreateTextResourceTest">
+            <class name="api.Resources.CreateFileResource">
                 <methods>
                     <include name="successCreateTextResourcesTest"/>
                 </methods>
             </class>
-            <class name="api.Resources.GetResourceTest">
+            <class name="api.Resources.CreateTextResource">
+                <methods>
+                    <include name="successCreateTextResourcesTest"/>
+                </methods>
+            </class>
+            <class name="api.Resources.GetResource">
                 <methods>
                     <include name="getResource"/>
                 </methods>
             </class>
-            <class name="api.Resources.DownloadResourceTest">
+            <class name="api.Resources.DownloadResource">
                 <methods>
                     <include name="downloadResource"/>
+                </methods>
+            </class>
+            <class name="api.Tools.GetQuote">
+                <methods>
+                    <include name="GetQuoteTest"/>
+                </methods>
+            </class>
+            <class name="api.Tools.GetWordCount">
+                <methods>
+                    <include name="GetWordCountTest"/>
+                </methods>
+            </class>
+            <class name="api.Discover.SupportedLanguages.SupportedLanguages">
+                <methods>
+                    <include name="supportedLanguagesTest"/>
+                </methods>
+            </class>
+            <class name="api.Discover.SupportedExpertise.SupportedExpertise">
+                <methods>
+                    <include name="supportedExpertiseTest"/>
+                </methods>
+            </class>
+            <class name="api.Discover.SupportedLanguagesPairs.SupportedLanguagesPairs">
+                <methods>
+                    <include name="supportedLanguagesPairsTest"/>
                 </methods>
             </class>
         </classes>

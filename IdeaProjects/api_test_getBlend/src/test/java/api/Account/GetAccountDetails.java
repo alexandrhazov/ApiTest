@@ -4,21 +4,16 @@ package api.Account;
 import api.Utils.Specification;
 import api.Utils.Credentials;
 import io.restassured.response.Response;
-import org.awaitility.Awaitility;
-import org.awaitility.Durations;
-import org.junit.Assert;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
-public class GetAccountDetailsTest {
+public class GetAccountDetails {
 
     @Test(invocationCount = Specification.ITERATION_COUNT)
-    public void GetAccountDetails() {
+    public void getAccountDetailsTest() {
         Specification.installSpecification(Specification.requestSpecification(Credentials.URL), Specification.responseSpecOk200());
 
         Response response = given()

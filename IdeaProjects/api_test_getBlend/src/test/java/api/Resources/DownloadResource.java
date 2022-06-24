@@ -3,16 +3,18 @@ package api.Resources;
 import api.Utils.Credentials;
 import api.Utils.Specification;
 import io.restassured.response.Response;
-import org.hamcrest.CoreMatchers;
-import org.junit.jupiter.api.Assertions;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
-public class DownloadResourceTest {
+public class DownloadResource {
 
     @Test(invocationCount = Specification.ITERATION_COUNT)
     public void downloadResource(ITestContext context) {
@@ -24,8 +26,18 @@ public class DownloadResourceTest {
                 .header("Authorization",Credentials.token)
                 .when()
                 .get(Credentials.URL + "resources/" + project_id + "/download")
-                .then().log().all()
+                .then().assertThat().body(notNullValue())
+                .and().log().all()
                 .extract().response();
+
+        File sourceFile = new File("/Users/aleksandrhazov/Desktop/FOS.rtf");
+        byte[] downloadedFile = response.asByteArray();
+
+        try(FileOutputStream fos = new FileOutputStream(sourceFile)) {
+            fos.write(downloadedFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

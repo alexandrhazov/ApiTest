@@ -13,7 +13,7 @@ import org.junit.runner.Request;
 public class Specification {
 
     // A number of iterations for each test
-    public static final int ITERATION_COUNT = 2;
+    public static final int ITERATION_COUNT = 1;
 
     public static RequestSpecification requestSpecification(String url) {
         return new RequestSpecBuilder()
@@ -31,6 +31,6 @@ public class Specification {
         RestAssured.responseSpecification = response;
 
         // Wait time for all tests
-        Awaitility.await().pollDelay(Durations.ONE_SECOND).until(() -> true);
+//        Awaitility.await().pollDelay(Durations.ONE_MILLISECOND).until(() -> true);
     }
 }
