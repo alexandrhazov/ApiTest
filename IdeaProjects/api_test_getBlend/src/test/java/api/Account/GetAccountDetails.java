@@ -15,7 +15,6 @@ public class GetAccountDetails {
     @Test(invocationCount = Specification.ITERATION_COUNT)
     public void getAccountDetailsTest() {
         Specification.installSpecification(Specification.requestSpecification(Credentials.URL), Specification.responseSpecOk200());
-
         Response response = given()
                 .header("Authorization", Credentials.token)
                 .when()

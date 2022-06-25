@@ -1,14 +1,16 @@
 package api.Utils;
 
+
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.awaitility.Awaitility;
-import org.awaitility.Durations;
-import org.junit.runner.Request;
+import org.testng.TestNG;
+
 
 public class Specification {
 
@@ -30,7 +32,8 @@ public class Specification {
         RestAssured.requestSpecification = request;
         RestAssured.responseSpecification = response;
 
+
         // Wait time for all tests
-//        Awaitility.await().pollDelay(Durations.ONE_MILLISECOND).until(() -> true);
+//        Awaitility.await().pollDelay(Durations.ONE_SECOND).until(() -> true);
     }
 }

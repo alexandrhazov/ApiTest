@@ -15,6 +15,8 @@ public class GetResource {
 
     @Test(invocationCount = Specification.ITERATION_COUNT)
     public void getResource(ITestContext context) {
+
+        //Getting project id of Create Text Resource test
         String project_id = (String) context.getAttribute("resource_id");
         project_id = project_id.substring(1, project_id.length() - 1);
 

@@ -7,9 +7,7 @@ import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import static io.restassured.RestAssured.given;
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class SupportedLanguages {

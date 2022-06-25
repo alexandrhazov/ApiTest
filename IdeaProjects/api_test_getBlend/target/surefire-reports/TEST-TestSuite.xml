@@ -1,0 +1,4178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="15.674" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/test-classes:/Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/classes:/Users/aleksandrhazov/.m2/repository/io/rest-assured/rest-assured/5.1.1/rest-assured-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/aleksandrhazov/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aleksandrhazov/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/aleksandrhazov/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/aleksandrhazov/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/aleksandrhazov/.m2/repository/io/rest-assured/json-path/5.1.1/json-path-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/aleksandrhazov/.m2/repository/io/rest-assured/rest-assured-common/5.1.1/rest-assured-common-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/io/rest-assured/xml-path/5.1.1/xml-path-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/aleksandrhazov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/aleksandrhazov/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/Users/aleksandrhazov/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/aleksandrhazov/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/aleksandrhazov/.m2/repository/org/testng/testng/7.6.0/testng-7.6.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aleksandrhazov/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aleksandrhazov/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/Users/aleksandrhazov/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/aleksandrhazov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/aleksandrhazov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/aleksandrhazov/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/aleksandrhazov/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/aleksandrhazov/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/aleksandrhazov/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/Users/aleksandrhazov/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/aleksandrhazov/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/aleksandrhazov/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/aleksandrhazov/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/Users/aleksandrhazov/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-testng/2.18.1/allure-testng-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-java-commons/2.18.1/allure-java-commons-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-model/2.18.1/allure-model-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-test-filter/2.18.1/allure-test-filter-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-selenide/2.18.1/allure-selenide-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/com/codeborne/selenide/6.6.4/selenide-6.6.4.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-java/4.2.2/selenium-java-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-api/4.2.2/selenium-api-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.2.2/selenium-chrome-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/aleksandrhazov/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/aleksandrhazov/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.2.2/selenium-chromium-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-json/4.2.2/selenium-json-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v100/4.2.2/selenium-devtools-v100-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.2.2/selenium-devtools-v101-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v102/4.2.2/selenium-devtools-v102-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.2.2/selenium-devtools-v85-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.2.2/selenium-edge-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.2.2/selenium-firefox-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.2.2/selenium-ie-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.2.2/selenium-opera-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.2.2/selenium-remote-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.77.Final/netty-transport-classes-kqueue-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.77.Final/netty-transport-native-kqueue-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-api/1.14.0/opentelemetry-api-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-context/1.14.0/opentelemetry-context-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.14.0/opentelemetry-exporter-logging-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.14.0/opentelemetry-sdk-metrics-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.14.0-alpha/opentelemetry-sdk-logs-1.14.0-alpha.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.14.0/opentelemetry-sdk-common-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.14.0/opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.14.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.14.0/opentelemetry-sdk-trace-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.14.0/opentelemetry-sdk-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.14.0-alpha/opentelemetry-semconv-1.14.0-alpha.jar:/Users/aleksandrhazov/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/aleksandrhazov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aleksandrhazov/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/aleksandrhazov/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/aleksandrhazov/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/aleksandrhazov/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aleksandrhazov/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-http/4.2.2/selenium-http-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.2.2/selenium-safari-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-support/4.2.2/selenium-support-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/com/codeborne/selenide-core/6.6.4/selenide-core-6.6.4.jar:/Users/aleksandrhazov/.m2/repository/io/github/bonigarcia/webdrivermanager/5.2.0/webdrivermanager-5.2.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/aleksandrhazov/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/aleksandrhazov/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/Users/aleksandrhazov/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/aleksandrhazov/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aleksandrhazov/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aleksandrhazov/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aleksandrhazov/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/aleksandrhazov/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/aleksandrhazov/.m2/repository/org/aspectj/aspectjweaver/1.9.9.1/aspectjweaver-1.9.9.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-testng/3.0.0-M7/surefire-testng-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M7/common-java5-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M7/surefire-shared-utils-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/3.0.0-M7/surefire-testng-utils-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-grouper/3.0.0-M7/surefire-grouper-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M7/surefire-api-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M7/surefire-logger-api-3.0.0-M7.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Jerusalem"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IL"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/surefire/surefirebooter-20220625151650693_3.jar /Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/surefire 2022-06-25T15-16-50_515-jvmRun1 surefire-20220625151650693_1tmp surefire_0-20220625151650693_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/test-classes:/Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/classes:/Users/aleksandrhazov/.m2/repository/io/rest-assured/rest-assured/5.1.1/rest-assured-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/aleksandrhazov/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aleksandrhazov/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/aleksandrhazov/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/aleksandrhazov/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/aleksandrhazov/.m2/repository/io/rest-assured/json-path/5.1.1/json-path-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/aleksandrhazov/.m2/repository/io/rest-assured/rest-assured-common/5.1.1/rest-assured-common-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/io/rest-assured/xml-path/5.1.1/xml-path-5.1.1.jar:/Users/aleksandrhazov/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/aleksandrhazov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/aleksandrhazov/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/Users/aleksandrhazov/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/aleksandrhazov/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/aleksandrhazov/.m2/repository/org/testng/testng/7.6.0/testng-7.6.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aleksandrhazov/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aleksandrhazov/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/Users/aleksandrhazov/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/aleksandrhazov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/aleksandrhazov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/aleksandrhazov/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/aleksandrhazov/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/aleksandrhazov/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/aleksandrhazov/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/Users/aleksandrhazov/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/aleksandrhazov/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/aleksandrhazov/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/aleksandrhazov/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/Users/aleksandrhazov/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-testng/2.18.1/allure-testng-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-java-commons/2.18.1/allure-java-commons-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-model/2.18.1/allure-model-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-test-filter/2.18.1/allure-test-filter-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/io/qameta/allure/allure-selenide/2.18.1/allure-selenide-2.18.1.jar:/Users/aleksandrhazov/.m2/repository/com/codeborne/selenide/6.6.4/selenide-6.6.4.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-java/4.2.2/selenium-java-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-api/4.2.2/selenium-api-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.2.2/selenium-chrome-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/aleksandrhazov/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/aleksandrhazov/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.2.2/selenium-chromium-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-json/4.2.2/selenium-json-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v100/4.2.2/selenium-devtools-v100-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.2.2/selenium-devtools-v101-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v102/4.2.2/selenium-devtools-v102-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.2.2/selenium-devtools-v85-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.2.2/selenium-edge-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.2.2/selenium-firefox-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.2.2/selenium-ie-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.2.2/selenium-opera-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.2.2/selenium-remote-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.77.Final/netty-transport-classes-kqueue-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.77.Final/netty-transport-native-kqueue-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-api/1.14.0/opentelemetry-api-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-context/1.14.0/opentelemetry-context-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.14.0/opentelemetry-exporter-logging-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.14.0/opentelemetry-sdk-metrics-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.14.0-alpha/opentelemetry-sdk-logs-1.14.0-alpha.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.14.0/opentelemetry-sdk-common-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.14.0/opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.14.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.14.0/opentelemetry-sdk-trace-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.14.0/opentelemetry-sdk-1.14.0.jar:/Users/aleksandrhazov/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.14.0-alpha/opentelemetry-semconv-1.14.0-alpha.jar:/Users/aleksandrhazov/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/aleksandrhazov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aleksandrhazov/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/aleksandrhazov/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/aleksandrhazov/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/aleksandrhazov/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/aleksandrhazov/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aleksandrhazov/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-http/4.2.2/selenium-http-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.2.2/selenium-safari-driver-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/org/seleniumhq/selenium/selenium-support/4.2.2/selenium-support-4.2.2.jar:/Users/aleksandrhazov/.m2/repository/com/codeborne/selenide-core/6.6.4/selenide-core-6.6.4.jar:/Users/aleksandrhazov/.m2/repository/io/github/bonigarcia/webdrivermanager/5.2.0/webdrivermanager-5.2.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/aleksandrhazov/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/aleksandrhazov/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/Users/aleksandrhazov/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/Users/aleksandrhazov/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/aleksandrhazov/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aleksandrhazov/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aleksandrhazov/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/aleksandrhazov/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aleksandrhazov/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/aleksandrhazov/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/aleksandrhazov/.m2/repository/org/aspectj/aspectjweaver/1.9.9.1/aspectjweaver-1.9.9.1.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-testng/3.0.0-M7/surefire-testng-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M7/common-java5-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M7/surefire-shared-utils-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/3.0.0-M7/surefire-testng-utils-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-grouper/3.0.0-M7/surefire-grouper-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M7/surefire-api-3.0.0-M7.jar:/Users/aleksandrhazov/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M7/surefire-logger-api-3.0.0-M7.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/aleksandrhazov"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.1.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend/target/surefire/surefirebooter-20220625151650693_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.1.1+0"/>
+    <property name="user.name" value="aleksandrhazov"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/aleksandrhazov/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/8f/fp_7z6fx5v12698wd84186640000gn/T/"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/aleksandrhazov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18.0.1.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="getAccountDetailsTest" classname="api.Account.GetAccountDetails" time="2.718">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:16:54 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=fivm2j3dujpurbj4j8j74fnfal; expires=Thu, 22-Dec-2022 12:16:54 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=75bee516-0f42-48c5-806c-a731aaaae741; expires=Tue, 22-Jun-2032 12:16:54 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "eadf3676-6d0a-481a-aabe-decb7a7a8f06"
+    },
+    "results": {
+        "credits": 1998.5,
+        "account_id": 1501080,
+        "account_username": "alextestcustomergetblend_60",
+        "account_name": "Alex",
+        "account_email": "alexTestCustomerGetBlend@gmail.com",
+        "role": "customer",
+        "uuid": "17fec3ca-1ad0-480b-a0f5-1db3ff53cf68",
+        "allowed_minus_credits": 0,
+        "translatorStatus": null
+    },
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+    <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+]]></system-err>
+  </testcase>
+  <testcase name="successCreateTextResourcesTest[org.testng.TestRunner@1e75af65](1)" classname="api.Resources.CreateFileResource" time="1.718">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:16:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=c6d9h0d2bsr6ofh3sh750afrg7; expires=Thu, 22-Dec-2022 12:16:55 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=e0fc4063-3888-440a-843f-254ca382d53e; expires=Tue, 22-Jun-2032 12:16:55 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "77f678b6-ed73-441f-953e-35cc711a8757"
+    },
+    "results": [
+        "rsc-62b6fcb7de2a51-05053934"
+    ],
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="successCreateTextResourcesTest[org.testng.TestRunner@1e75af65](1)" classname="api.Resources.CreateTextResource" time="0.921">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:16:57 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=9n94s9p2rf7cpj1j7ku3872ull; expires=Thu, 22-Dec-2022 12:16:57 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=94d837e9-135a-4a41-ab56-ea81c9e51f31; expires=Tue, 22-Jun-2032 12:16:57 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "0dd6a8db-7555-4241-98a0-e82b3ca6deac"
+    },
+    "results": [
+        "rsc-62b6fcb96f2989-13850798"
+    ],
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getResource[org.testng.TestRunner@1e75af65](1)" classname="api.Resources.GetResource" time="1.307">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:16:58 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=s7dhlot57ii8hv6ek0m1cm85gu; expires=Thu, 22-Dec-2022 12:16:58 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=f1130080-45fc-41e5-ab87-c587847b338c; expires=Tue, 22-Jun-2032 12:16:58 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "fb778aaa-b3b6-4485-b4f4-45bd03829d71"
+    },
+    "results": {
+        "type": "text",
+        "length": 31,
+        "download_url": "https://app.getblend.com/api/2/resources/rsc-62b6fcb96f2989-13850798/download"
+    },
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="downloadResource[org.testng.TestRunner@1e75af65](1)" classname="api.Resources.DownloadResource" time="0.96">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:16:59 GMT
+Content-Type: text/rtf;;charset=UTF-8
+Content-Length: 420
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=9p105pr5krd48jvo6j840dmecd; expires=Thu, 22-Dec-2022 12:16:59 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Set-Cookie: _vtc=2a29864d-0dae-442b-9370-c819ba97a760; expires=Tue, 22-Jun-2032 12:16:59 GMT; Max-Age=315360000; path=/
+Pragma: private
+Cache-Control: must-revalidate, post-check=0, pre-check=0
+Cache-Control: private
+Content-Description: File Transfer
+Content-Disposition: attachment; filename="test.rtf"
+Content-Transfer-Encoding: binary;
+filename: "test.rtf"
+
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 GetBlend Api test downloaded file}
+]]></system-out>
+  </testcase>
+  <testcase name="GetQuoteTest" classname="api.Tools.GetQuote" time="1.198">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:17:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=9f6ovjgb64e1kd67evq0dm88le; expires=Thu, 22-Dec-2022 12:17:00 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=9e891308-23cf-4377-9a06-c5a6b1adb228; expires=Tue, 22-Jun-2032 12:17:00 GMT; Max-Age=315360000; path=/
+Set-Cookie: abprof=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: abprof=d9865ab8-3497-4ee8-952b-267d5765582d; expires=Tue, 20-Jun-2023 12:17:00 GMT; Max-Age=31104000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "709b0abd-f942-4eb1-aac6-b8eba332b315"
+    },
+    "results": {
+        "currency": "USD",
+        "total": {
+            "net_price": 8.7,
+            "transaction_fee": 0,
+            "price": 20,
+            "wordcount": "100",
+            "credits": 869.9999999999999
+        }
+    },
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="GetWordCountTest[org.testng.TestRunner@1e75af65](1)" classname="api.Tools.GetWordCount" time="1.963">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:17:02 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=rpncaibp4vi5pnhqnj4qiu91ug; expires=Thu, 22-Dec-2022 12:17:01 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=1ff7befb-3f90-4004-b35e-f550622e807b; expires=Tue, 22-Jun-2032 12:17:01 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "288c1944-9717-4e8f-a6a5-e43152ec6938"
+    },
+    "results": {
+        "resources": [
+            {
+                "resource": "rsc-62b6fcb96f2989-13850798",
+                "wordcount": 5
+            }
+        ],
+        "total": {
+            "wordcount": 5
+        }
+    },
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="supportedLanguagesTest" classname="api.Discover.SupportedLanguages.SupportedLanguages" time="1.219">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:17:03 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=grm04p8hoo3pee15njqgn679jq; expires=Thu, 22-Dec-2022 12:17:03 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=2a10765c-a5db-4b97-9daa-03e46c24c559; expires=Tue, 22-Jun-2032 12:17:03 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "48832db4-969c-4b92-8261-d3ba49c2119c"
+    },
+    "results": [
+        {
+            "name": "Afrikaans",
+            "code": "af",
+            "id": 414,
+            "slug": "afrikaans"
+        },
+        {
+            "name": "Albanian",
+            "code": "sq-al",
+            "id": 355,
+            "slug": "albanian"
+        },
+        {
+            "name": "Amharic",
+            "code": "am-et",
+            "id": 415,
+            "slug": "amharic"
+        },
+        {
+            "name": "Arabic",
+            "code": "ar-sa",
+            "id": 17,
+            "slug": "arabic"
+        },
+        {
+            "name": "Arabic (Egyptian)",
+            "code": "ar-eg",
+            "id": 487,
+            "slug": "arabic-egyptian"
+        },
+        {
+            "name": "Arabic (Gulf)",
+            "code": "ar-ae",
+            "id": 488,
+            "slug": "arabic-gulf"
+        },
+        {
+            "name": "Arabic (Levantine)",
+            "code": "ar-jo",
+            "id": 490,
+            "slug": "arabic-levantine"
+        },
+        {
+            "name": "Arabic (Maghrebi)",
+            "code": "ar-ma",
+            "id": 491,
+            "slug": "arabic-maghrebi"
+        },
+        {
+            "name": "Armenian",
+            "code": "hy-am",
+            "id": 417,
+            "slug": "armenian"
+        },
+        {
+            "name": "Assamese",
+            "code": "asm",
+            "id": 13088,
+            "slug": "assamese"
+        },
+        {
+            "name": "Azerbaijani",
+            "code": "az-az",
+            "id": 419,
+            "slug": "azerbaijani"
+        },
+        {
+            "name": "Basque",
+            "code": "baq",
+            "id": 421,
+            "slug": "basque"
+        },
+        {
+            "name": "Belarussian",
+            "code": "be-by",
+            "id": 422,
+            "slug": "belarussian"
+        },
+        {
+            "name": "Bengali",
+            "code": "bn-bd",
+            "id": 271,
+            "slug": "bengali"
+        },
+        {
+            "name": "Bosnian",
+            "code": "bs-ba",
+            "id": 423,
+            "slug": "bosnian"
+        },
+        {
+            "name": "Bulgarian",
+            "code": "bg-bg",
+            "id": 268,
+            "slug": "bulgarian"
+        },
+        {
+            "name": "Burmese",
+            "code": "my-mm",
+            "id": 425,
+            "slug": "burmese"
+        },
+        {
+            "name": "Catalan",
+            "code": "ca-es",
+            "id": 426,
+            "slug": "catalan"
+        },
+        {
+            "name": "Chinese Cantonese",
+            "code": "zh-cn-yue",
+            "id": 30,
+            "slug": "chinese-cantonese"
+        },
+        {
+            "name": "Croatian",
+            "code": "hr-hr",
+            "id": 356,
+            "slug": "croatian"
+        },
+        {
+            "name": "Czech",
+            "code": "cs-cz",
+            "id": 320,
+            "slug": "czech"
+        },
+        {
+            "name": "Danish",
+            "code": "da",
+            "id": 309,
+            "slug": "danish"
+        },
+        {
+            "name": "Dari",
+            "code": "fa-af",
+            "id": 495,
+            "slug": "dari"
+        },
+        {
+            "name": "Dutch",
+            "code": "nl-nl",
+            "id": 58,
+            "slug": "dutch"
+        },
+        {
+            "name": "English",
+            "code": "en-us",
+            "id": 1,
+            "slug": "english"
+        },
+        {
+            "name": "Estonian",
+            "code": "et-ee",
+            "id": 357,
+            "slug": "estonian"
+        },
+        {
+            "name": "Finnish",
+            "code": "fi-fi",
+            "id": 432,
+            "slug": "finnish"
+        },
+        {
+            "name": "Flemish (Belgian)",
+            "code": "fl-be",
+            "id": 13070,
+            "slug": "flemish-belgian"
+        },
+        {
+            "name": "French",
+            "code": "fr-fr",
+            "id": 73,
+            "slug": "french"
+        },
+        {
+            "name": "French (Canadian)",
+            "code": "fr-ca",
+            "id": 524,
+            "slug": "french-canadian"
+        },
+        {
+            "name": "Galician",
+            "code": "gl-es",
+            "id": 434,
+            "slug": "galician"
+        },
+        {
+            "name": "Georgian",
+            "code": "ka-ge",
+            "id": 510,
+            "slug": "georgian"
+        },
+        {
+            "name": "German",
+            "code": "de-de",
+            "id": 87,
+            "slug": "german"
+        },
+        {
+            "name": "Greek",
+            "code": "el-gr",
+            "id": 204,
+            "slug": "greek"
+        },
+        {
+            "name": "Gujarati",
+            "code": "gu-in",
+            "id": 435,
+            "slug": "gujarati"
+        },
+        {
+            "name": "Haitian Creole",
+            "code": "ht",
+            "id": 13071,
+            "slug": "haitian-creole"
+        },
+        {
+            "name": "Hausa",
+            "code": "hau",
+            "id": 13091,
+            "slug": "hausa"
+        },
+        {
+            "name": "Hebrew",
+            "code": "he-il",
+            "id": 101,
+            "slug": "hebrew"
+        },
+        {
+            "name": "Hindi",
+            "code": "hi-in",
+            "id": 190,
+            "slug": "hindi"
+        },
+        {
+            "name": "Hungarian",
+            "code": "hu-hu",
+            "id": 205,
+            "slug": "hungarian"
+        },
+        {
+            "name": "Icelandic",
+            "code": "is-is",
+            "id": 312,
+            "slug": "icelandic"
+        },
+        {
+            "name": "Indonesian",
+            "code": "id-id",
+            "id": 270,
+            "slug": "indonesian"
+        },
+        {
+            "name": "Italian",
+            "code": "it-it",
+            "id": 115,
+            "slug": "italian"
+        },
+        {
+            "name": "Japanese",
+            "code": "ja-jp",
+            "id": 129,
+            "slug": "japanese"
+        },
+        {
+            "name": "Kannada",
+            "code": "kn",
+            "id": 13084,
+            "slug": "kn"
+        },
+        {
+            "name": "Kazakh",
+            "code": "kk-kz",
+            "id": 13069,
+            "slug": "kazakh"
+        },
+        {
+            "name": "Khmer",
+            "code": "km-kh",
+            "id": 439,
+            "slug": "khmer"
+        },
+        {
+            "name": "Korean",
+            "code": "ko-kp",
+            "id": 332,
+            "slug": "korean"
+        },
+        {
+            "name": "Kurdish",
+            "code": "ku-tr",
+            "id": 441,
+            "slug": "kurdish"
+        },
+        {
+            "name": "Lao",
+            "code": "lo-la",
+            "id": 3111,
+            "slug": "lao"
+        },
+        {
+            "name": "Latvian",
+            "code": "lv-lv",
+            "id": 358,
+            "slug": "latvian"
+        },
+        {
+            "name": "Lithuanian",
+            "code": "lt-lt",
+            "id": 359,
+            "slug": "lithuanian"
+        },
+        {
+            "name": "Macedonian",
+            "code": "mk-mk",
+            "id": 444,
+            "slug": "macedonian"
+        },
+        {
+            "name": "Malay",
+            "code": "ms-my",
+            "id": 273,
+            "slug": "malay"
+        },
+        {
+            "name": "Malayalam",
+            "code": "ml-in",
+            "id": 492,
+            "slug": "malayalam"
+        },
+        {
+            "name": "Maltese",
+            "code": "mt-mt",
+            "id": 446,
+            "slug": "maltese"
+        },
+        {
+            "name": "Marathi",
+            "code": "mr-in",
+            "id": 514,
+            "slug": "marathi"
+        },
+        {
+            "name": "Mongolian",
+            "code": "mn-mn",
+            "id": 449,
+            "slug": "mongolian"
+        },
+        {
+            "name": "Montenegrin",
+            "code": "sr-me",
+            "id": 13083,
+            "slug": "sr-me"
+        },
+        {
+            "name": "Nepali",
+            "code": "ne-np",
+            "id": 451,
+            "slug": "nepali"
+        },
+        {
+            "name": "Norwegian",
+            "code": "no-no",
+            "id": 311,
+            "slug": "norwegian"
+        },
+        {
+            "name": "Pashto",
+            "code": "ps",
+            "id": 494,
+            "slug": "pashto"
+        },
+        {
+            "name": "Persian",
+            "code": "fa-ir",
+            "id": 458,
+            "slug": "persian"
+        },
+        {
+            "name": "Polish",
+            "code": "pl-pl",
+            "id": 319,
+            "slug": "polish"
+        },
+        {
+            "name": "Portuguese (Brazil)",
+            "code": "pt-br",
+            "id": 424,
+            "slug": "portuguese-brazil"
+        },
+        {
+            "name": "Portuguese (Portugal)",
+            "code": "pt-pt",
+            "id": 496,
+            "slug": "portuguese-portugal"
+        },
+        {
+            "name": "Punjabi",
+            "code": "pa-in",
+            "id": 456,
+            "slug": "panjabi"
+        },
+        {
+            "name": "Romanian",
+            "code": "ro-ro",
+            "id": 269,
+            "slug": "romanian"
+        },
+        {
+            "name": "Russian",
+            "code": "ru-ru",
+            "id": 161,
+            "slug": "russian"
+        },
+        {
+            "name": "Serbian (Cyrillic)",
+            "code": "sr-rs",
+            "id": 360,
+            "slug": "serbian"
+        },
+        {
+            "name": "Serbian (Latin)",
+            "code": "sr",
+            "id": 465,
+            "slug": "serbo-croatian"
+        },
+        {
+            "name": "Simplified Chinese (Mainland China)",
+            "code": "zh-cn-cmn-s",
+            "id": 13056,
+            "slug": "chinese-mandarin-simplified"
+        },
+        {
+            "name": "Sinhala",
+            "code": "si",
+            "id": 13079,
+            "slug": "sinhala"
+        },
+        {
+            "name": "Slovak",
+            "code": "sk-sk",
+            "id": 361,
+            "slug": "slovak"
+        },
+        {
+            "name": "Slovenian (Slovene)",
+            "code": "sl-si",
+            "id": 466,
+            "slug": "slovenian-slovene"
+        },
+        {
+            "name": "Somali",
+            "code": "so-so",
+            "id": 467,
+            "slug": "somalian"
+        },
+        {
+            "name": "Spanish",
+            "code": "es-es",
+            "id": 176,
+            "slug": "spanish"
+        },
+        {
+            "name": "Spanish (Latin-America)",
+            "code": "es-ar",
+            "id": 293,
+            "slug": "spanish-latin-america"
+        },
+        {
+            "name": "Spanish (Mexico)",
+            "code": "es-mx",
+            "id": 13104,
+            "slug": "spanish-mexico"
+        },
+        {
+            "name": "Swahili",
+            "code": "sw",
+            "id": 468,
+            "slug": "swahili"
+        },
+        {
+            "name": "Swedish",
+            "code": "sv-se",
+            "id": 310,
+            "slug": "swedish"
+        },
+        {
+            "name": "Swiss French",
+            "code": "fr-ch",
+            "id": 13077,
+            "slug": "french-swiss"
+        },
+        {
+            "name": "Swiss German",
+            "code": "gsw-ch",
+            "id": 469,
+            "slug": "swiss-german"
+        },
+        {
+            "name": "Tagalog",
+            "code": "tl-ph",
+            "id": 470,
+            "slug": "tagalog"
+        },
+        {
+            "name": "Tajik",
+            "code": "tgk",
+            "id": 13086,
+            "slug": "tgk"
+        },
+        {
+            "name": "Tamil",
+            "code": "ta-in",
+            "id": 272,
+            "slug": "tamil"
+        },
+        {
+            "name": "Telugu",
+            "code": "te-in",
+            "id": 480,
+            "slug": "telugu"
+        },
+        {
+            "name": "Thai",
+            "code": "th-th",
+            "id": 331,
+            "slug": "thai"
+        },
+        {
+            "name": "Tigrinya",
+            "code": "tir",
+            "id": 13087,
+            "slug": "tigrinya"
+        },
+        {
+            "name": "Traditional Chinese (HK)",
+            "code": "zh-cn-cmn-t",
+            "id": 13057,
+            "slug": "chinese-mandarin-traditional"
+        },
+        {
+            "name": "Traditional Chinese (Taiwan)",
+            "code": "zh-tw",
+            "id": 13072,
+            "slug": "taiwanese"
+        },
+        {
+            "name": "Turkish",
+            "code": "tr-tr",
+            "id": 266,
+            "slug": "turkish"
+        },
+        {
+            "name": "Ukrainian",
+            "code": "uk-ua",
+            "id": 267,
+            "slug": "ukrainian"
+        },
+        {
+            "name": "Urdu",
+            "code": "ur-pk",
+            "id": 475,
+            "slug": "urdu"
+        },
+        {
+            "name": "Uzbek",
+            "code": "uz-uz",
+            "id": 476,
+            "slug": "uzbek"
+        },
+        {
+            "name": "Vietnamese",
+            "code": "vi-vn",
+            "id": 477,
+            "slug": "vietnamese"
+        },
+        {
+            "name": "Welsh",
+            "code": "cy-gb",
+            "id": 479,
+            "slug": "welsh"
+        },
+        {
+            "name": "Xhosa",
+            "code": "xho",
+            "id": 13085,
+            "slug": "xho"
+        },
+        {
+            "name": "Yoruba",
+            "code": "yo-ng",
+            "id": 482,
+            "slug": "yoruba"
+        },
+        {
+            "name": "Zulu",
+            "code": "zul",
+            "id": 13082,
+            "slug": "zulu"
+        }
+    ],
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="supportedExpertiseTest" classname="api.Discover.SupportedExpertise.SupportedExpertise" time="0.904">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:17:05 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=7pau18b8mdp7tkai2ifjb38i5r; expires=Thu, 22-Dec-2022 12:17:04 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=83726460-ba93-4d04-8b69-f1c40f3f90fd; expires=Tue, 22-Jun-2032 12:17:05 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "6b58df64-ca70-4594-8a43-c50f42d80df2"
+    },
+    "results": [
+        {
+            "name": "Automotive / Aerospace",
+            "code": "automotive-aerospace",
+            "expertise_id": 330
+        },
+        {
+            "name": "Finance",
+            "code": "business-finance",
+            "expertise_id": 331
+        },
+        {
+            "name": "Software / IT",
+            "code": "software-it",
+            "expertise_id": 332
+        },
+        {
+            "name": "Legal",
+            "code": "legal-certificate",
+            "expertise_id": 333
+        },
+        {
+            "name": "Marketing / Consumer/ Media",
+            "code": "marketing-consumer-media",
+            "expertise_id": 334
+        },
+        {
+            "name": "Medical",
+            "code": "medical",
+            "expertise_id": 336
+        },
+        {
+            "name": "Patents",
+            "code": "patents",
+            "expertise_id": 337
+        },
+        {
+            "name": "Scientific / Academic",
+            "code": "scientific-academic",
+            "expertise_id": 338
+        },
+        {
+            "name": "Technical / Engineering",
+            "code": "technical-engineering",
+            "expertise_id": 339
+        },
+        {
+            "name": "Gaming / Video Games",
+            "code": "gaming-video-games",
+            "expertise_id": 443
+        },
+        {
+            "name": "Ad-Words / Banners",
+            "code": "ad-words-banners",
+            "expertise_id": 450
+        },
+        {
+            "name": "Mobile Applications",
+            "code": "mobile-applications",
+            "expertise_id": 451
+        },
+        {
+            "name": "Tourism",
+            "code": "tourism",
+            "expertise_id": 452
+        },
+        {
+            "name": "Certificates Translation",
+            "code": "certificates-translation",
+            "expertise_id": 460
+        },
+        {
+            "name": "Training / Employee Handbooks",
+            "code": "training-employee-handbooks",
+            "expertise_id": 461
+        },
+        {
+            "name": "Forex / Crypto",
+            "code": "forex-crypto",
+            "expertise_id": 462
+        }
+    ],
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="supportedLanguagesPairsTest" classname="api.Discover.SupportedLanguagesPairs.SupportedLanguagesPairs" time="2.031">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 25 Jun 2022 12:17:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Set-Cookie: OHTSESS=7dstkok2uppfch3ipsu3pkh5qv; expires=Thu, 22-Dec-2022 12:17:06 GMT; Max-Age=15552000; path=/; domain=.getblend.com; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _vtc=5497a8ff-d141-42b9-b580-3a2863aff7ea; expires=Tue, 22-Jun-2032 12:17:06 GMT; Max-Age=315360000; path=/
+
+{
+    "status": {
+        "code": 0,
+        "msg": "ok",
+        "request_uuid": "fb1903ad-772b-4490-ab59-f832d71e5402"
+    },
+    "results": [
+        {
+            "source": {
+                "name": "Afrikaans",
+                "code": "af",
+                "slug": "afrikaans"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Albanian",
+                "code": "sq-al",
+                "slug": "albanian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Amharic",
+                "code": "am-et",
+                "slug": "amharic"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Arabic",
+                "code": "ar-sa",
+                "slug": "arabic"
+            },
+            "targets": [
+                {
+                    "name": "Arabic",
+                    "code": "ar-sa",
+                    "slug": "arabic",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Armenian",
+                "code": "hy-am",
+                "slug": "armenian"
+            },
+            "targets": [
+                {
+                    "name": "Armenian",
+                    "code": "hy-am",
+                    "slug": "armenian",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Assamese",
+                "code": "asm",
+                "slug": "assamese"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Azerbaijani",
+                "code": "az-az",
+                "slug": "azerbaijani"
+            },
+            "targets": [
+                {
+                    "name": "Azerbaijani",
+                    "code": "az-az",
+                    "slug": "azerbaijani",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Bengali",
+                "code": "bn-bd",
+                "slug": "bengali"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Bengali (Romanized)",
+                "code": "bn-rom",
+                "slug": "bengali-romanized"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Bosnian",
+                "code": "bs-ba",
+                "slug": "bosnian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Breton",
+                "code": "bre",
+                "slug": "breton"
+            },
+            "targets": [
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "high"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Bulgarian",
+                "code": "bg-bg",
+                "slug": "bulgarian"
+            },
+            "targets": [
+                {
+                    "name": "Bulgarian",
+                    "code": "bg-bg",
+                    "slug": "bulgarian",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Burmese",
+                "code": "my-mm",
+                "slug": "burmese"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Catalan",
+                "code": "ca-es",
+                "slug": "catalan"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "high"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Cebuano",
+                "code": "ceb",
+                "slug": "cebuano"
+            },
+            "targets": [
+                {
+                    "name": "Cebuano",
+                    "code": "ceb",
+                    "slug": "cebuano",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Chinese Cantonese",
+                "code": "zh-cn-yue",
+                "slug": "chinese-cantonese"
+            },
+            "targets": [
+                {
+                    "name": "Chinese Cantonese",
+                    "code": "zh-cn-yue",
+                    "slug": "chinese-cantonese",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Czech",
+                "code": "cs-cz",
+                "slug": "czech"
+            },
+            "targets": [
+                {
+                    "name": "Czech",
+                    "code": "cs-cz",
+                    "slug": "czech",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Danish",
+                "code": "da",
+                "slug": "danish"
+            },
+            "targets": [
+                {
+                    "name": "Danish",
+                    "code": "da",
+                    "slug": "danish",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Norwegian",
+                    "code": "no-no",
+                    "slug": "norwegian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Dutch",
+                "code": "nl-nl",
+                "slug": "dutch"
+            },
+            "targets": [
+                {
+                    "name": "Dutch",
+                    "code": "nl-nl",
+                    "slug": "dutch",
+                    "availability": "high"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "English",
+                "code": "en-us",
+                "slug": "english"
+            },
+            "targets": [
+                {
+                    "name": "Afrikaans",
+                    "code": "af",
+                    "slug": "afrikaans",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Albanian",
+                    "code": "sq-al",
+                    "slug": "albanian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Amharic",
+                    "code": "am-et",
+                    "slug": "amharic",
+                    "availability": "low"
+                },
+                {
+                    "name": "Arabic",
+                    "code": "ar-sa",
+                    "slug": "arabic",
+                    "availability": "high"
+                },
+                {
+                    "name": "Arabic (Egyptian)",
+                    "code": "ar-eg",
+                    "slug": "arabic-egyptian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Arabic (Formal)",
+                    "code": "ar-saf",
+                    "slug": "arabic-formal",
+                    "availability": "high"
+                },
+                {
+                    "name": "Arabic (Gulf)",
+                    "code": "ar-ae",
+                    "slug": "arabic-gulf",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Arabic (Iraqi)",
+                    "code": "ar-iq",
+                    "slug": "arabic-iraqi",
+                    "availability": "low"
+                },
+                {
+                    "name": "Arabic (Levantine)",
+                    "code": "ar-jo",
+                    "slug": "arabic-levantine",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Arabic (Maghrebi)",
+                    "code": "ar-ma",
+                    "slug": "arabic-maghrebi",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Armenian",
+                    "code": "hy-am",
+                    "slug": "armenian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Assamese",
+                    "code": "asm",
+                    "slug": "assamese",
+                    "availability": "low"
+                },
+                {
+                    "name": "Azerbaijani",
+                    "code": "az-az",
+                    "slug": "azerbaijani",
+                    "availability": "low"
+                },
+                {
+                    "name": "Bambara",
+                    "code": "bm_ML",
+                    "slug": "bambara",
+                    "availability": "low"
+                },
+                {
+                    "name": "Belarussian",
+                    "code": "be-by",
+                    "slug": "belarussian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Bengali",
+                    "code": "bn-bd",
+                    "slug": "bengali",
+                    "availability": "high"
+                },
+                {
+                    "name": "Bhojpuri",
+                    "code": "bp_IN",
+                    "slug": "bhojpuri",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Bosnian",
+                    "code": "bs-ba",
+                    "slug": "bosnian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Bulgarian",
+                    "code": "bg-bg",
+                    "slug": "bulgarian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Burmese",
+                    "code": "my-mm",
+                    "slug": "burmese",
+                    "availability": "low"
+                },
+                {
+                    "name": "Catalan",
+                    "code": "ca-es",
+                    "slug": "catalan",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Cebuano",
+                    "code": "ceb",
+                    "slug": "cebuano",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Chinese Cantonese",
+                    "code": "zh-cn-yue",
+                    "slug": "chinese-cantonese",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Croatian",
+                    "code": "hr-hr",
+                    "slug": "croatian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Czech",
+                    "code": "cs-cz",
+                    "slug": "czech",
+                    "availability": "high"
+                },
+                {
+                    "name": "Danish",
+                    "code": "da",
+                    "slug": "danish",
+                    "availability": "high"
+                },
+                {
+                    "name": "Dari",
+                    "code": "fa-af",
+                    "slug": "dari",
+                    "availability": "low"
+                },
+                {
+                    "name": "Dutch",
+                    "code": "nl-nl",
+                    "slug": "dutch",
+                    "availability": "high"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "Estonian",
+                    "code": "et-ee",
+                    "slug": "estonian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Finnish",
+                    "code": "fi-fi",
+                    "slug": "finnish",
+                    "availability": "high"
+                },
+                {
+                    "name": "Flemish (Belgian)",
+                    "code": "fl-be",
+                    "slug": "flemish-belgian",
+                    "availability": "low"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "high"
+                },
+                {
+                    "name": "French (Canadian)",
+                    "code": "fr-ca",
+                    "slug": "french-canadian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Galician",
+                    "code": "gl-es",
+                    "slug": "galician",
+                    "availability": "low"
+                },
+                {
+                    "name": "Ganda",
+                    "code": "lug",
+                    "slug": "ganda",
+                    "availability": "low"
+                },
+                {
+                    "name": "Georgian",
+                    "code": "ka-ge",
+                    "slug": "georgian",
+                    "availability": "low"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "high"
+                },
+                {
+                    "name": "Greek",
+                    "code": "el-gr",
+                    "slug": "greek",
+                    "availability": "high"
+                },
+                {
+                    "name": "Gujarati",
+                    "code": "gu-in",
+                    "slug": "gujarati",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Gusii",
+                    "code": "guz_KE",
+                    "slug": "gusii",
+                    "availability": "low"
+                },
+                {
+                    "name": "Haitian Creole",
+                    "code": "ht",
+                    "slug": "haitian-creole",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Hebrew",
+                    "code": "he-il",
+                    "slug": "hebrew",
+                    "availability": "high"
+                },
+                {
+                    "name": "Hindi",
+                    "code": "hi-in",
+                    "slug": "hindi",
+                    "availability": "high"
+                },
+                {
+                    "name": "Hungarian",
+                    "code": "hu-hu",
+                    "slug": "hungarian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Icelandic",
+                    "code": "is-is",
+                    "slug": "icelandic",
+                    "availability": "low"
+                },
+                {
+                    "name": "Ilocano",
+                    "code": "ilo_PH",
+                    "slug": "ilocano",
+                    "availability": "low"
+                },
+                {
+                    "name": "Indonesian",
+                    "code": "id-id",
+                    "slug": "indonesian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Japanese",
+                    "code": "ja-jp",
+                    "slug": "japanese",
+                    "availability": "high"
+                },
+                {
+                    "name": "Kalenjin",
+                    "code": "kln_KE",
+                    "slug": "kalenjin",
+                    "availability": "low"
+                },
+                {
+                    "name": "Kamba",
+                    "code": "kam",
+                    "slug": "kamba",
+                    "availability": "low"
+                },
+                {
+                    "name": "Kannada",
+                    "code": "kn",
+                    "slug": "kn",
+                    "availability": "low"
+                },
+                {
+                    "name": "Kazakh",
+                    "code": "kk-kz",
+                    "slug": "kazakh",
+                    "availability": "low"
+                },
+                {
+                    "name": "Khmer",
+                    "code": "km-kh",
+                    "slug": "khmer",
+                    "availability": "high"
+                },
+                {
+                    "name": "Kikuyu",
+                    "code": "ki_KE",
+                    "slug": "kikuyu",
+                    "availability": "low"
+                },
+                {
+                    "name": "Kinyarwanda",
+                    "code": "kin",
+                    "slug": "kinyarwanda",
+                    "availability": "low"
+                },
+                {
+                    "name": "Kongo",
+                    "code": "kon",
+                    "slug": "kongo",
+                    "availability": "low"
+                },
+                {
+                    "name": "Korean",
+                    "code": "ko-kp",
+                    "slug": "korean",
+                    "availability": "high"
+                },
+                {
+                    "name": "Lao",
+                    "code": "lo-la",
+                    "slug": "lao",
+                    "availability": "low"
+                },
+                {
+                    "name": "Latvian",
+                    "code": "lv-lv",
+                    "slug": "latvian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Lithuanian",
+                    "code": "lt-lt",
+                    "slug": "lithuanian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Luo",
+                    "code": "luo",
+                    "slug": "luo",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Macedonian",
+                    "code": "mk-mk",
+                    "slug": "macedonian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Maithili",
+                    "code": "ai_IN",
+                    "slug": "maithili",
+                    "availability": "low"
+                },
+                {
+                    "name": "Malay",
+                    "code": "ms-my",
+                    "slug": "malay",
+                    "availability": "high"
+                },
+                {
+                    "name": "Malayalam",
+                    "code": "ml-in",
+                    "slug": "malayalam",
+                    "availability": "low"
+                },
+                {
+                    "name": "Maltese",
+                    "code": "mt-mt",
+                    "slug": "maltese",
+                    "availability": "low"
+                },
+                {
+                    "name": "Marathi",
+                    "code": "mr-in",
+                    "slug": "marathi",
+                    "availability": "low"
+                },
+                {
+                    "name": "Mongolian",
+                    "code": "mn-mn",
+                    "slug": "mongolian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Montenegrin",
+                    "code": "sr-me",
+                    "slug": "sr-me",
+                    "availability": "low"
+                },
+                {
+                    "name": "Nepali",
+                    "code": "ne-np",
+                    "slug": "nepali",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Norwegian",
+                    "code": "no-no",
+                    "slug": "norwegian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Pashto",
+                    "code": "ps",
+                    "slug": "pashto",
+                    "availability": "low"
+                },
+                {
+                    "name": "Persian",
+                    "code": "fa-ir",
+                    "slug": "persian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Polish",
+                    "code": "pl-pl",
+                    "slug": "polish",
+                    "availability": "high"
+                },
+                {
+                    "name": "Portuguese (Brazil)",
+                    "code": "pt-br",
+                    "slug": "portuguese-brazil",
+                    "availability": "high"
+                },
+                {
+                    "name": "Portuguese (Portugal)",
+                    "code": "pt-pt",
+                    "slug": "portuguese-portugal",
+                    "availability": "high"
+                },
+                {
+                    "name": "Punjabi",
+                    "code": "pa-in",
+                    "slug": "panjabi",
+                    "availability": "low"
+                },
+                {
+                    "name": "Romanian",
+                    "code": "ro-ro",
+                    "slug": "romanian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Serbian (Cyrillic)",
+                    "code": "sr-rs",
+                    "slug": "serbian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Serbian (Latin)",
+                    "code": "sr",
+                    "slug": "serbo-croatian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Simplified Chinese (Mainland China)",
+                    "code": "zh-cn-cmn-s",
+                    "slug": "chinese-mandarin-simplified",
+                    "availability": "high"
+                },
+                {
+                    "name": "Sinhala",
+                    "code": "si",
+                    "slug": "sinhala",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Slovak",
+                    "code": "sk-sk",
+                    "slug": "slovak",
+                    "availability": "low"
+                },
+                {
+                    "name": "Slovenian (Slovene)",
+                    "code": "sl-si",
+                    "slug": "slovenian-slovene",
+                    "availability": "low"
+                },
+                {
+                    "name": "Somali",
+                    "code": "so-so",
+                    "slug": "somalian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Southern Sotho",
+                    "code": "sot",
+                    "slug": "southern-sotho",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "high"
+                },
+                {
+                    "name": "Spanish (Latin-America)",
+                    "code": "es-ar",
+                    "slug": "spanish-latin-america",
+                    "availability": "high"
+                },
+                {
+                    "name": "Spanish (Mexico)",
+                    "code": "es-mx",
+                    "slug": "spanish-mexico",
+                    "availability": "high"
+                },
+                {
+                    "name": "Swahili",
+                    "code": "sw",
+                    "slug": "swahili",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Swedish",
+                    "code": "sv-se",
+                    "slug": "swedish",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Swiss German",
+                    "code": "gsw-ch",
+                    "slug": "swiss-german",
+                    "availability": "low"
+                },
+                {
+                    "name": "Tagalog",
+                    "code": "tl-ph",
+                    "slug": "tagalog",
+                    "availability": "high"
+                },
+                {
+                    "name": "Tajik",
+                    "code": "tgk",
+                    "slug": "tgk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Tamil",
+                    "code": "ta-in",
+                    "slug": "tamil",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Tamil (Romanized)",
+                    "code": "ta-in-rom",
+                    "slug": "tamil-romanized",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Telugu",
+                    "code": "te-in",
+                    "slug": "telugu",
+                    "availability": "low"
+                },
+                {
+                    "name": "Thai",
+                    "code": "th-th",
+                    "slug": "thai",
+                    "availability": "high"
+                },
+                {
+                    "name": "Traditional Chinese (HK)",
+                    "code": "zh-cn-cmn-t",
+                    "slug": "chinese-mandarin-traditional",
+                    "availability": "high"
+                },
+                {
+                    "name": "Traditional Chinese (Taiwan)",
+                    "code": "zh-tw",
+                    "slug": "taiwanese",
+                    "availability": "low"
+                },
+                {
+                    "name": "Tswana",
+                    "code": "tsn",
+                    "slug": "tswana",
+                    "availability": "low"
+                },
+                {
+                    "name": "Turkish",
+                    "code": "tr-tr",
+                    "slug": "turkish",
+                    "availability": "high"
+                },
+                {
+                    "name": "Ukrainian",
+                    "code": "uk-ua",
+                    "slug": "ukrainian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Urdu",
+                    "code": "ur-pk",
+                    "slug": "urdu",
+                    "availability": "high"
+                },
+                {
+                    "name": "Uzbek",
+                    "code": "uz-uz",
+                    "slug": "uzbek",
+                    "availability": "low"
+                },
+                {
+                    "name": "Vietnamese",
+                    "code": "vi-vn",
+                    "slug": "vietnamese",
+                    "availability": "high"
+                },
+                {
+                    "name": "Xhosa",
+                    "code": "xho",
+                    "slug": "xho",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Yoruba",
+                    "code": "yo-ng",
+                    "slug": "yoruba",
+                    "availability": "low"
+                },
+                {
+                    "name": "Zulu",
+                    "code": "zul",
+                    "slug": "zulu",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "English (AU)",
+                "code": "en-au",
+                "slug": "english-au"
+            },
+            "targets": [
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "English (UK)",
+                "code": "en-ak",
+                "slug": "english-uk"
+            },
+            "targets": [
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "medium"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "low"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "English (US)",
+                "code": "en-us",
+                "slug": "english-us"
+            },
+            "targets": [
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "low"
+                },
+                {
+                    "name": "French (Canadian)",
+                    "code": "fr-ca",
+                    "slug": "french-canadian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish (Latin-America)",
+                    "code": "es-ar",
+                    "slug": "spanish-latin-america",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Estonian",
+                "code": "et-ee",
+                "slug": "estonian"
+            },
+            "targets": [
+                {
+                    "name": "Estonian",
+                    "code": "et-ee",
+                    "slug": "estonian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Finnish",
+                "code": "fi-fi",
+                "slug": "finnish"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "French",
+                "code": "fr-fr",
+                "slug": "french"
+            },
+            "targets": [
+                {
+                    "name": "Arabic",
+                    "code": "ar-sa",
+                    "slug": "arabic",
+                    "availability": "low"
+                },
+                {
+                    "name": "Breton",
+                    "code": "bre",
+                    "slug": "breton",
+                    "availability": "high"
+                },
+                {
+                    "name": "Catalan",
+                    "code": "ca-es",
+                    "slug": "catalan",
+                    "availability": "low"
+                },
+                {
+                    "name": "Dutch",
+                    "code": "nl-nl",
+                    "slug": "dutch",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "medium"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "high"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Portuguese (Brazil)",
+                    "code": "pt-br",
+                    "slug": "portuguese-brazil",
+                    "availability": "low"
+                },
+                {
+                    "name": "Portuguese (Portugal)",
+                    "code": "pt-pt",
+                    "slug": "portuguese-portugal",
+                    "availability": "low"
+                },
+                {
+                    "name": "Romanian",
+                    "code": "ro-ro",
+                    "slug": "romanian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "high"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "French (Canadian)",
+                "code": "fr-ca",
+                "slug": "french-canadian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Galician",
+                "code": "gl-es",
+                "slug": "galician"
+            },
+            "targets": [
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Georgian",
+                "code": "ka-ge",
+                "slug": "georgian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "German",
+                "code": "de-de",
+                "slug": "german"
+            },
+            "targets": [
+                {
+                    "name": "Danish",
+                    "code": "da",
+                    "slug": "danish",
+                    "availability": "low"
+                },
+                {
+                    "name": "Dutch",
+                    "code": "nl-nl",
+                    "slug": "dutch",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "high"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "high"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Polish",
+                    "code": "pl-pl",
+                    "slug": "polish",
+                    "availability": "low"
+                },
+                {
+                    "name": "Portuguese (Portugal)",
+                    "code": "pt-pt",
+                    "slug": "portuguese-portugal",
+                    "availability": "low"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Greek",
+                "code": "el-gr",
+                "slug": "greek"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Greek",
+                    "code": "el-gr",
+                    "slug": "greek",
+                    "availability": "high"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Gujarati",
+                "code": "gu-in",
+                "slug": "gujarati"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Haitian Creole",
+                "code": "ht",
+                "slug": "haitian-creole"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Hebrew",
+                "code": "he-il",
+                "slug": "hebrew"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (US)",
+                    "code": "en-us",
+                    "slug": "english-us",
+                    "availability": "low"
+                },
+                {
+                    "name": "Hebrew",
+                    "code": "he-il",
+                    "slug": "hebrew",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Hindi",
+                "code": "hi-in",
+                "slug": "hindi"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "Hindi",
+                    "code": "hi-in",
+                    "slug": "hindi",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Hungarian",
+                "code": "hu-hu",
+                "slug": "hungarian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Hungarian",
+                    "code": "hu-hu",
+                    "slug": "hungarian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Icelandic",
+                "code": "is-is",
+                "slug": "icelandic"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Indonesian",
+                "code": "id-id",
+                "slug": "indonesian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Indonesian",
+                    "code": "id-id",
+                    "slug": "indonesian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Italian",
+                "code": "it-it",
+                "slug": "italian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "low"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "high"
+                },
+                {
+                    "name": "Polish",
+                    "code": "pl-pl",
+                    "slug": "polish",
+                    "availability": "low"
+                },
+                {
+                    "name": "Portuguese (Brazil)",
+                    "code": "pt-br",
+                    "slug": "portuguese-brazil",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "high"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Japanese",
+                "code": "ja-jp",
+                "slug": "japanese"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "Japanese",
+                    "code": "ja-jp",
+                    "slug": "japanese",
+                    "availability": "high"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Kannada",
+                "code": "kn",
+                "slug": "kn"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Khmer",
+                "code": "km-kh",
+                "slug": "khmer"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Khmer",
+                    "code": "km-kh",
+                    "slug": "khmer",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Korean",
+                "code": "ko-kp",
+                "slug": "korean"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "Korean",
+                    "code": "ko-kp",
+                    "slug": "korean",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Lao",
+                "code": "lo-la",
+                "slug": "lao"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Latvian",
+                "code": "lv-lv",
+                "slug": "latvian"
+            },
+            "targets": [
+                {
+                    "name": "Latvian",
+                    "code": "lv-lv",
+                    "slug": "latvian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Lithuanian",
+                "code": "lt-lt",
+                "slug": "lithuanian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Lithuanian",
+                    "code": "lt-lt",
+                    "slug": "lithuanian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Macedonian",
+                "code": "mk-mk",
+                "slug": "macedonian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Uzbek",
+                    "code": "uz-uz",
+                    "slug": "uzbek",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Malay",
+                "code": "ms-my",
+                "slug": "malay"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Malay",
+                    "code": "ms-my",
+                    "slug": "malay",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Malayalam",
+                "code": "ml-in",
+                "slug": "malayalam"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Maltese",
+                "code": "mt-mt",
+                "slug": "maltese"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Marathi",
+                "code": "mr-in",
+                "slug": "marathi"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Nepali",
+                "code": "ne-np",
+                "slug": "nepali"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Norwegian",
+                "code": "no-no",
+                "slug": "norwegian"
+            },
+            "targets": [
+                {
+                    "name": "Danish",
+                    "code": "da",
+                    "slug": "danish",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Norwegian",
+                    "code": "no-no",
+                    "slug": "norwegian",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Pashto",
+                "code": "ps",
+                "slug": "pashto"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Persian",
+                "code": "fa-ir",
+                "slug": "persian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Persian",
+                    "code": "fa-ir",
+                    "slug": "persian",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Polish",
+                "code": "pl-pl",
+                "slug": "polish"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Polish",
+                    "code": "pl-pl",
+                    "slug": "polish",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Portuguese (Brazil)",
+                "code": "pt-br",
+                "slug": "portuguese-brazil"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "high"
+                },
+                {
+                    "name": "Spanish (Latin-America)",
+                    "code": "es-ar",
+                    "slug": "spanish-latin-america",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Portuguese (Portugal)",
+                "code": "pt-pt",
+                "slug": "portuguese-portugal"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "low"
+                },
+                {
+                    "name": "Portuguese (Brazil)",
+                    "code": "pt-br",
+                    "slug": "portuguese-brazil",
+                    "availability": "low"
+                },
+                {
+                    "name": "Portuguese (Portugal)",
+                    "code": "pt-pt",
+                    "slug": "portuguese-portugal",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Punjabi",
+                "code": "pa-in",
+                "slug": "panjabi"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Romanian",
+                "code": "ro-ro",
+                "slug": "romanian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Romanian",
+                    "code": "ro-ro",
+                    "slug": "romanian",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Russian",
+                "code": "ru-ru",
+                "slug": "russian"
+            },
+            "targets": [
+                {
+                    "name": "Azerbaijani",
+                    "code": "az-az",
+                    "slug": "azerbaijani",
+                    "availability": "low"
+                },
+                {
+                    "name": "Belarussian",
+                    "code": "be-by",
+                    "slug": "belarussian",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Latvian",
+                    "code": "lv-lv",
+                    "slug": "latvian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                },
+                {
+                    "name": "Ukrainian",
+                    "code": "uk-ua",
+                    "slug": "ukrainian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Serbian (Cyrillic)",
+                "code": "sr-rs",
+                "slug": "serbian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Serbian (Cyrillic)",
+                    "code": "sr-rs",
+                    "slug": "serbian",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Simplified Chinese (Mainland China)",
+                "code": "zh-cn-cmn-s",
+                "slug": "chinese-mandarin-simplified"
+            },
+            "targets": [
+                {
+                    "name": "Chinese Cantonese",
+                    "code": "zh-cn-yue",
+                    "slug": "chinese-cantonese",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (US)",
+                    "code": "en-us",
+                    "slug": "english-us",
+                    "availability": "low"
+                },
+                {
+                    "name": "Korean",
+                    "code": "ko-kp",
+                    "slug": "korean",
+                    "availability": "high"
+                },
+                {
+                    "name": "Simplified Chinese (Mainland China)",
+                    "code": "zh-cn-cmn-s",
+                    "slug": "chinese-mandarin-simplified",
+                    "availability": "high"
+                },
+                {
+                    "name": "Traditional Chinese (HK)",
+                    "code": "zh-cn-cmn-t",
+                    "slug": "chinese-mandarin-traditional",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Sinhala",
+                "code": "si",
+                "slug": "sinhala"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Slovak",
+                "code": "sk-sk",
+                "slug": "slovak"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "Slovak",
+                    "code": "sk-sk",
+                    "slug": "slovak",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Slovenian (Slovene)",
+                "code": "sl-si",
+                "slug": "slovenian-slovene"
+            },
+            "targets": [
+                {
+                    "name": "Slovenian (Slovene)",
+                    "code": "sl-si",
+                    "slug": "slovenian-slovene",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Spanish",
+                "code": "es-es",
+                "slug": "spanish"
+            },
+            "targets": [
+                {
+                    "name": "Catalan",
+                    "code": "ca-es",
+                    "slug": "catalan",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (US)",
+                    "code": "en-us",
+                    "slug": "english-us",
+                    "availability": "low"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "high"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "high"
+                },
+                {
+                    "name": "Italian",
+                    "code": "it-it",
+                    "slug": "italian",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Portuguese (Brazil)",
+                    "code": "pt-br",
+                    "slug": "portuguese-brazil",
+                    "availability": "high"
+                },
+                {
+                    "name": "Portuguese (Portugal)",
+                    "code": "pt-pt",
+                    "slug": "portuguese-portugal",
+                    "availability": "low"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Spanish (Latin-America)",
+                "code": "es-ar",
+                "slug": "spanish-latin-america"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "high"
+                },
+                {
+                    "name": "French",
+                    "code": "fr-fr",
+                    "slug": "french",
+                    "availability": "medium"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Portuguese (Brazil)",
+                    "code": "pt-br",
+                    "slug": "portuguese-brazil",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Spanish",
+                    "code": "es-es",
+                    "slug": "spanish",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Spanish (Mexico)",
+                "code": "es-mx",
+                "slug": "spanish-mexico"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Swahili",
+                "code": "sw",
+                "slug": "swahili"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Swedish",
+                "code": "sv-se",
+                "slug": "swedish"
+            },
+            "targets": [
+                {
+                    "name": "Danish",
+                    "code": "da",
+                    "slug": "danish",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "Norwegian",
+                    "code": "no-no",
+                    "slug": "norwegian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Swedish",
+                    "code": "sv-se",
+                    "slug": "swedish",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Tagalog",
+                "code": "tl-ph",
+                "slug": "tagalog"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "Tagalog",
+                    "code": "tl-ph",
+                    "slug": "tagalog",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Tamil",
+                "code": "ta-in",
+                "slug": "tamil"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Tamil (Romanized)",
+                "code": "ta-in-rom",
+                "slug": "tamil-romanized"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Thai",
+                "code": "th-th",
+                "slug": "thai"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "high"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Thai",
+                    "code": "th-th",
+                    "slug": "thai",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Traditional Chinese (HK)",
+                "code": "zh-cn-cmn-t",
+                "slug": "chinese-mandarin-traditional"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (US)",
+                    "code": "en-us",
+                    "slug": "english-us",
+                    "availability": "low"
+                },
+                {
+                    "name": "Traditional Chinese (HK)",
+                    "code": "zh-cn-cmn-t",
+                    "slug": "chinese-mandarin-traditional",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Traditional Chinese (Taiwan)",
+                "code": "zh-tw",
+                "slug": "taiwanese"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Turkish",
+                "code": "tr-tr",
+                "slug": "turkish"
+            },
+            "targets": [
+                {
+                    "name": "Azerbaijani",
+                    "code": "az-az",
+                    "slug": "azerbaijani",
+                    "availability": "low"
+                },
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "low"
+                },
+                {
+                    "name": "German",
+                    "code": "de-de",
+                    "slug": "german",
+                    "availability": "low"
+                },
+                {
+                    "name": "Turkish",
+                    "code": "tr-tr",
+                    "slug": "turkish",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Ukrainian",
+                "code": "uk-ua",
+                "slug": "ukrainian"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "low"
+                },
+                {
+                    "name": "Russian",
+                    "code": "ru-ru",
+                    "slug": "russian",
+                    "availability": "low"
+                },
+                {
+                    "name": "Ukrainian",
+                    "code": "uk-ua",
+                    "slug": "ukrainian",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Urdu",
+                "code": "ur-pk",
+                "slug": "urdu"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Uzbek",
+                "code": "uz-uz",
+                "slug": "uzbek"
+            },
+            "targets": [
+                {
+                    "name": "Uzbek",
+                    "code": "uz-uz",
+                    "slug": "uzbek",
+                    "availability": "low"
+                }
+            ]
+        },
+        {
+            "source": {
+                "name": "Vietnamese",
+                "code": "vi-vn",
+                "slug": "vietnamese"
+            },
+            "targets": [
+                {
+                    "name": "English",
+                    "code": "en-us",
+                    "slug": "english",
+                    "availability": "medium"
+                },
+                {
+                    "name": "English (UK)",
+                    "code": "en-ak",
+                    "slug": "english-uk",
+                    "availability": "medium"
+                },
+                {
+                    "name": "Vietnamese",
+                    "code": "vi-vn",
+                    "slug": "vietnamese",
+                    "availability": "medium"
+                }
+            ]
+        }
+    ],
+    "errors": [
+        
+    ]
+}
+]]></system-out>
+  </testcase>
+</testsuite>

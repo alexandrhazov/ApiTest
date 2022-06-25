@@ -12,13 +12,9 @@ import static org.hamcrest.Matchers.greaterThan;
 
 public class GetQuote {
 
-    String wordcount = "100";
+    String currency = "USD";
     String source_language = "en";
     String target_language = "rus";
-    String currency = "USD";
-
-    String quoteURL = "tools/quote?wordcount=" + wordcount + "&source_language=" + source_language +
-            "&target_language=" + target_language +"&currency=" + currency;
 
     @Test(invocationCount = Specification.ITERATION_COUNT)
     public void GetQuoteTest() {
@@ -26,12 +22,17 @@ public class GetQuote {
 
         Response response = given()
                 .header("Authorization", Credentials.token)
+                .queryParam("wordcount", 100)
+                .queryParam("source_language", source_language)
+                .queryParam("target_language", target_language)
+                .queryParam("currency", currency)
                 .when()
-                .get( Credentials.URL + quoteURL)
+                .get( Credentials.URL + "tools/quote")
                 .then().log().all()
                 .body("status.code", equalTo(0))
                 .body("results.total.price", greaterThan(0))
-                .body("results.total.wordcount", equalTo(wordcount))
+                .body("results.total.credits", greaterThan(0F))
+                .body("results.total.wordcount", equalTo("100"))
                 .body("results.currency", equalTo(currency))
                 .extract().response();
     }

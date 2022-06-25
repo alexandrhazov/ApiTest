@@ -18,6 +18,8 @@ public class DownloadResource {
 
     @Test(invocationCount = Specification.ITERATION_COUNT)
     public void downloadResource(ITestContext context) {
+
+        //Getting project id of Create File Resource test
         String project_id = (String) context.getAttribute("resource_id_download");
         project_id = project_id.substring(1, project_id.length() - 1);
 

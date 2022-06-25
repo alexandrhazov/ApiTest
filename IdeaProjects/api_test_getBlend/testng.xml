@@ -53,6 +53,21 @@
                     <include name="supportedLanguagesPairsTest"/>
                 </methods>
             </class>
+            <class name="api.MachineTranslation.Translate">
+                <methods>
+                    <include name="translateTest"/>
+                </methods>
+            </class>
+            <class name="api.MachineTranslation.DetectLanguage">
+                <methods>
+                    <include name="detectLanguageTest"/>
+                </methods>
+            </class>
+            <class name="api.MachineTranslation.MT_MTPE_ProjectCreation">
+                <methods>
+                    <include name="mt_mtpe_projectCreationTest"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

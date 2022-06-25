@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-25T15:16:52 IDT" name="All Test Suite" finished-at="2022-06-25T15:17:07 IDT" duration-ms="14980">
+    <groups>
+    </groups>
+    <test started-at="2022-06-25T15:16:52 IDT" name="/Users/aleksandrhazov/IdeaProjects/api_test_getBlend" finished-at="2022-06-25T15:17:07 IDT" duration-ms="14980">
+      <class name="api.Resources.GetResource">
+        <test-method signature="getResource(org.testng.ITestContext)[pri:0, instance:api.Resources.GetResource@203dd56b]" started-at="2022-06-25T15:16:57 IDT" name="getResource" finished-at="2022-06-25T15:16:58 IDT" duration-ms="1306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e75af65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResource -->
+      </class> <!-- api.Resources.GetResource -->
+      <class name="api.Resources.CreateFileResource">
+        <test-method signature="successCreateTextResourcesTest(org.testng.ITestContext)[pri:0, instance:api.Resources.CreateFileResource@6b410923]" started-at="2022-06-25T15:16:54 IDT" name="successCreateTextResourcesTest" finished-at="2022-06-25T15:16:56 IDT" duration-ms="1717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e75af65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successCreateTextResourcesTest -->
+      </class> <!-- api.Resources.CreateFileResource -->
+      <class name="api.Discover.SupportedExpertise.SupportedExpertise">
+        <test-method signature="supportedExpertiseTest()[pri:0, instance:api.Discover.SupportedExpertise.SupportedExpertise@1450078a]" started-at="2022-06-25T15:17:04 IDT" name="supportedExpertiseTest" finished-at="2022-06-25T15:17:04 IDT" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportedExpertiseTest -->
+      </class> <!-- api.Discover.SupportedExpertise.SupportedExpertise -->
+      <class name="api.Tools.GetWordCount">
+        <test-method signature="GetWordCountTest(org.testng.ITestContext)[pri:0, instance:api.Tools.GetWordCount@5ec77191]" started-at="2022-06-25T15:17:00 IDT" name="GetWordCountTest" finished-at="2022-06-25T15:17:02 IDT" duration-ms="1963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e75af65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetWordCountTest -->
+      </class> <!-- api.Tools.GetWordCount -->
+      <class name="api.Discover.SupportedLanguages.SupportedLanguages">
+        <test-method signature="supportedLanguagesTest()[pri:0, instance:api.Discover.SupportedLanguages.SupportedLanguages@4642b71d]" started-at="2022-06-25T15:17:02 IDT" name="supportedLanguagesTest" finished-at="2022-06-25T15:17:04 IDT" duration-ms="1219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportedLanguagesTest -->
+      </class> <!-- api.Discover.SupportedLanguages.SupportedLanguages -->
+      <class name="api.Discover.SupportedLanguagesPairs.SupportedLanguagesPairs">
+        <test-method signature="supportedLanguagesPairsTest()[pri:0, instance:api.Discover.SupportedLanguagesPairs.SupportedLanguagesPairs@c68a5f8]" started-at="2022-06-25T15:17:04 IDT" name="supportedLanguagesPairsTest" finished-at="2022-06-25T15:17:07 IDT" duration-ms="2031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportedLanguagesPairsTest -->
+      </class> <!-- api.Discover.SupportedLanguagesPairs.SupportedLanguagesPairs -->
+      <class name="api.Account.GetAccountDetails">
+        <test-method signature="getAccountDetailsTest()[pri:0, instance:api.Account.GetAccountDetails@3e6f3bae]" started-at="2022-06-25T15:16:52 IDT" name="getAccountDetailsTest" finished-at="2022-06-25T15:16:54 IDT" duration-ms="2674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAccountDetailsTest -->
+      </class> <!-- api.Account.GetAccountDetails -->
+      <class name="api.Resources.DownloadResource">
+        <test-method signature="downloadResource(org.testng.ITestContext)[pri:0, instance:api.Resources.DownloadResource@e8fadb0]" started-at="2022-06-25T15:16:58 IDT" name="downloadResource" finished-at="2022-06-25T15:16:59 IDT" duration-ms="958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e75af65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadResource -->
+      </class> <!-- api.Resources.DownloadResource -->
+      <class name="api.Resources.CreateTextResource">
+        <test-method signature="successCreateTextResourcesTest(org.testng.ITestContext)[pri:0, instance:api.Resources.CreateTextResource@57bd2029]" started-at="2022-06-25T15:16:56 IDT" name="successCreateTextResourcesTest" finished-at="2022-06-25T15:16:57 IDT" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e75af65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successCreateTextResourcesTest -->
+      </class> <!-- api.Resources.CreateTextResource -->
+      <class name="api.Tools.GetQuote">
+        <test-method signature="GetQuoteTest()[pri:0, instance:api.Tools.GetQuote@2234078]" started-at="2022-06-25T15:16:59 IDT" name="GetQuoteTest" finished-at="2022-06-25T15:17:00 IDT" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetQuoteTest -->
+      </class> <!-- api.Tools.GetQuote -->
+    </test> <!-- /Users/aleksandrhazov/IdeaProjects/api_test_getBlend -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
